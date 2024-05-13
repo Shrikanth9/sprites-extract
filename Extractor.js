@@ -8,6 +8,8 @@ spritesheetImage.onload = () => {
   
 };
 
+var links = [];
+
 
 function extractAndDownloadImages(spritesheetImage, spriteData) {
   
@@ -27,5 +29,15 @@ function extractAndDownloadImages(spritesheetImage, spriteData) {
     link.download = `${image}`;
     link.innerHTML = `${image}`;
     document.getElementById("images-container").appendChild(link);
+    links.push(link);
+  }
+
+  for(let i=0; i<links.length; ++i) {
+    setTimeout(() => {
+      links[i].click();
+      if(i === links.length - 1) {
+        alert("Done!");
+      }
+    }, 500 * i);
   }
 }
