@@ -25,7 +25,6 @@ export function extractAndDownloadImages(spriteSheetDir, jsonDir) {
       link.href = dataURL;
       link.download = `${image}`;
       link.innerHTML = `${image}`;
-      document.getElementById("images-container").appendChild(link);
       link.style.display = "none";
       links.push(link);
     }
