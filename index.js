@@ -1,17 +1,13 @@
-const spriteSheetDir = "./extract/spritesheet.png"
-const jsonDir = "./extract/spritesheet.json"
-// Usage
-const spritesheetImage = new Image();
-spritesheetImage.src = spriteSheetDir;
-spritesheetImage.onload = () => {
-  fetch(jsonDir).then((response) => response.json()).then((spriteData) => extractAndDownloadImages(spritesheetImage, spriteData.frames))
-  
-};
+export function extractAndDownloadImages(spriteSheetDir, jsonDir) {
+  // Usage
+  const spritesheetImage = new Image();
+  spritesheetImage.src = spriteSheetDir;
+  spritesheetImage.onload = () => {
+    fetch(jsonDir).then((response) => response.json()).then((spriteData) => extractAndDownloadImages(spritesheetImage, spriteData.frames))
+    
+  };
 
-var links = [];
-
-
-function extractAndDownloadImages(spritesheetImage, spriteData) {
+  var links = [];
   
   for(let image in spriteData) {
     // Create a canvas for each extracted image
