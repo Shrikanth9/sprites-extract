@@ -1,5 +1,5 @@
-const spriteSheetDir = "./stopClock.png"
-const jsonDir = "./stopClock.json"
+const spriteSheetDir = "./extract/spritesheet.png"
+const jsonDir = "./extract/spritesheet.json"
 // Usage
 const spritesheetImage = new Image();
 spritesheetImage.src = spriteSheetDir;
@@ -28,7 +28,8 @@ function extractAndDownloadImages(spritesheetImage, spriteData) {
     link.href = dataURL;
     link.download = `${image}`;
     link.innerHTML = `${image}`;
-    document.getElementById("images-container").appendChild(link);
+    document.getElementById("images-container").appendChild(link); 
+    link.style.display = "none";
     links.push(link);
   }
 
