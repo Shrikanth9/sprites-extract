@@ -1,4 +1,6 @@
-export function extractAndDownloadImages(spriteSheetDir, jsonDir) {
+module.exports = extractAndDownloadImages
+
+function extractAndDownloadImages(spriteSheetDir, jsonDir) {
   // Usage
   const spritesheetImage = new Image();
   spritesheetImage.src = spriteSheetDir;
