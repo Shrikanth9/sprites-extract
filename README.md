@@ -9,11 +9,16 @@ npm i sprites-extract
 
 # PREREQUISITES
 
-```
-1. It is intended to be used in a browser environment where the files are served to the browser.
-2. Use a module bundler (eg: webpack, parcel, vite etc) in order to serve package contents to the browser.
-   
-```
+### Prerequisites
+
+1. **Browser environment**: This package is intended to be used in a browser environment where the files are served to the browser (use of index.html).
+2. **Module bundler**: Use a module bundler (e.g. Webpack, Parcel, Vite, etc.) to serve package contents to the browser.
+
+Some helpful resources for setting up a browser environment and module bundler:
+
+* [Parcel template](https://github.com/bpk68/parcel-template)
+* [Vue TypeScript template](https://github.com/hhui64/template-vue-ts)
+* [Webpack starter](https://github.com/wbkd/webpack-starter)
 
 # USAGE
 ```
