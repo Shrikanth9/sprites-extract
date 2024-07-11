@@ -10,7 +10,8 @@ npm i sprites-extract
 # PREREQUISITES
 
 ```
-It is intended to be used in a browser environment where the files are served to the browser. So you need to use a module bundler (eg: webpack, parcel, vite etc) in order to serve package contents to the browser.
+1. It is intended to be used in a browser environment where the files are served to the browser.
+2. Use a module bundler (eg: webpack, parcel, vite etc) in order to serve package contents to the browser.
    
 ```
 

@@ -1,6 +1,6 @@
 {
   "name": "sprites-extract",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "This will extract sprites from the spritesheet using the corresponding texture packer data. Use the method extractAndDownloadImages()",
   "main": "index.js",
   "scripts": {
