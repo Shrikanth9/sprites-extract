@@ -90,5 +90,3 @@ const cropImages = (spriteSheetDir, imageData) => {
         }
     }
 }
-
-extract("stopClock.png", "stopClock.json")
