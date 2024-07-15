@@ -7,22 +7,21 @@ npm i sprites-extract
 
 ```
 
-# PREREQUISITES
-
-### Prerequisites
-
-1. **Browser environment**: This package is intended to be used in a browser environment where the files are served to the browser (use of index.html).
-2. **Module bundler**: Use a module bundler (e.g. Webpack, Parcel, Vite, etc.) to serve package contents to the browser.
-
-Some helpful resources for setting up a browser environment and module bundler:
-
-* [Parcel template](https://github.com/bpk68/parcel-template)
-* [Vue TypeScript template](https://github.com/hhui64/template-vue-ts)
-* [Webpack starter](https://github.com/wbkd/webpack-starter)
 
 # USAGE
-```
-1. Import the method `extract()`.
-2. Call this method. Pass the paths of the TexturePacker spritesheet and JSON file as parameters (e.g., `extract("/path/to/spritesheet.png", "./path/to/spritesheet.json")`)
 
+1. Create a JavaScript file and import the `extract()` method.
+2. Call the `extract()` method, passing the paths of the TexturePacker spritesheet and JSON file as parameters. For example:
+
+```javascript
+const { extract } = require('sprites-extract');
+
+extract('/path/to/spritesheet.png', './path/to/spritesheet.json');
 ```
+3. Run the javascript file using node js command (eg: node script.js). A folder named "Output" should be generated along with all the extracted images from spritesheet.
+
+
+
+# CONTRIBUTING
+
+Contributions are welcome! Please open an issue or submit a pull request if you have any suggestions or bug fixes.
