@@ -1,7 +1,7 @@
 {
   "name": "sprites-extract",
-  "version": "1.1.2",
-  "description": "This will extract sprites from the spritesheet using the corresponding texture packer data. Use the method extractAndDownloadImages()",
+  "version": "1.1.3",
+  "description": "This will extract sprites from the spritesheet using the corresponding texture packer data. Use the method extract()",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
