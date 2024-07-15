@@ -10,11 +10,11 @@ npm i sprites-extract
 
 # USAGE
 
-1. Create a JavaScript file and import the `extract()` method.
+1. Create a JavaScript file and require the `extract()` method.
 2. Call the `extract()` method, passing the paths of the TexturePacker spritesheet and JSON file as parameters. For example:
 
 ```javascript
-const { extract } = require('sprites-extract');
+const extract = require('sprites-extract');
 
 extract('/path/to/spritesheet.png', './path/to/spritesheet.json');
 ```
